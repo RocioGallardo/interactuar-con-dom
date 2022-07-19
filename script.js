@@ -31,9 +31,9 @@ for (let plato of platos){
     <img src="${plato.imagen}" alt="">
     <ul id="ul">`
     const ul = document.getElementById("ul")
-    for (let i = 0; i< plato.ingredientes.length; i++){
+    for (let ingrediente of plato.ingredientes) {
         ul.innerHTML +=`
-        <li>${plato.ingredientes[i]}</li>
+        <li>${ingrediente}</li>
         `
     }
     `</ul>
@@ -41,7 +41,7 @@ for (let plato of platos){
     ` 
 }
 
-const arrayIngredientes = platos[0]
+
 
 
 /* for (let plato of platos){
